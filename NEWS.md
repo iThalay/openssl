@@ -7,7 +7,6 @@ release. For more details please read the CHANGES file.
 OpenSSL Releases
 ----------------
 
- - [OpenSSL 3.5](#openssl-35)
  - [OpenSSL 3.4](#openssl-34)
  - [OpenSSL 3.3](#openssl-33)
  - [OpenSSL 3.2](#openssl-32)
@@ -20,41 +19,17 @@ OpenSSL Releases
  - [OpenSSL 1.0.0](#openssl-100)
  - [OpenSSL 0.9.x](#openssl-09x)
 
-OpenSSL 3.5
------------
-
-### Major changes between OpenSSL 3.4 and OpenSSL 3.5 [under development]
-
-OpenSSL 3.5.0 is a feature release adding significant new functionality to
-OpenSSL.
-
-This release is in development.
-
-This release incorporates the following potentially significant or incompatible
-changes:
-
-  * Default encryption cipher for the `req`, `cms`, and `smime` applications
-    changed from `des-ede3-cbc` to `aes-256-cbc`.
-
-This release adds the following new features:
-
-  * Allow the FIPS provider to optionally use the `JITTER` seed source.
-    Because this seed source is not part of the OpenSSL FIPS validations,
-    it should only be enabled after the [jitterentropy-library] has been
-    assessed for entropy quality.  Moreover, the FIPS provider including
-    this entropy source will need to obtain an [ESV] from the [CMVP] before
-    FIPS compliance can be claimed.  Enable this using the configuration
-    option `enable-fips-jitter`.
-
 OpenSSL 3.4
 -----------
 
-### Major changes between OpenSSL 3.3 and OpenSSL 3.4 [under development]
+### Major changes between OpenSSL 3.4.0 and OpenSSL 3.4.1 [under development]
+
+  * none
+
+### Major changes between OpenSSL 3.3 and OpenSSL 3.4.0 [22 Oct 2024]
 
 OpenSSL 3.4.0 is a feature release adding significant new functionality to
 OpenSSL.
-
-This release is in development.
 
 This release incorporates the following potentially significant or incompatible
 changes:
@@ -2026,6 +2001,3 @@ OpenSSL 0.9.x
 [CHANGES.md]: ./CHANGES.md
 [README-QUIC.md]: ./README-QUIC.md
 [issue tracker]: https://github.com/openssl/openssl/issues
-[CMVP]: https://csrc.nist.gov/projects/cryptographic-module-validation-program
-[ESV]: https://csrc.nist.gov/Projects/cryptographic-module-validation-program/entropy-validations
-[jitterentropy-library]: https://github.com/smuellerDD/jitterentropy-library

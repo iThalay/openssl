@@ -75,7 +75,16 @@ OpenSSL 3.5
 OpenSSL 3.4
 -----------
 
-### Changes between 3.3 and 3.4 [xx XXX xxxx]
+### Changes between 3.4.0 and 3.4.1 [xx XXX xxxx]
+
+ * none yet
+
+### Changes between 3.3 and 3.4.0 [22 Oct 2024]
+
+ * For the FIPS provider only, replaced the primary DRBG with a continuous
+   health check module.  This also removes the now forbidden DRBG chaining.
+
+   *Paul Dale*
 
  * For the FIPS provider only, replaced the primary DRBG with a continuous
    health check module.  This also removes the now forbidden DRBG chaining.
